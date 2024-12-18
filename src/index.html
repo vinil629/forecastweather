@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <!-- <div> -->
+        <h1 class="text-center font-bold text-2xl bg-violet-500 text-white p-8 ">weather dashboard</h1>
+    <div class="flex flex-row sm:flex-row sm:justify-center items-center" >
+        <div class="border border-black my-5 mx-4 p-4 text-center w-full sm:w-1/2" id="head" >
+            <!-- <div class="border border-black p-4"> -->
+            <label>enter city name</label><br>
+            <input type="text" placeholder="eg:uk,india..." class="border border-black rounded-sm p-2 my-2 sm:w-auto" id="inp">
+            <br>
+          
+            <button class="bg-sky-500 border rounded-md border-black p-2 my-1 text-center text-white hover:bg-violet-400 hover:text-white sm:w-auto" id="btn">search</button>
+            <h1>--------------or-------------</h1>
+            <button class="bg-sky-400 text-white border border-black rounded-md p-3 my-2 hover:bg-violet-600 hover:white w-full sm:w-auto" id="current">use current location</button>
+            <!-- </div> -->
+
+            <div id="recent" class="mt-4">
+                <label for="recentCitiesDropdown">recent searches</label>
+                <select id="recentCitiesDropdown" class="w-full p-2 border text-gray-600 border-gray-300 rounded-md hidden sm:block"></select>
+          
+            </div>
+
+        </div>
+        <div class="my-5 mx-4 p-4 bg-blue-500 w-screen border items-center flex justify-center" id="second">
+            
+        </div>
+    </div> 
+
+    <div id="days">
+        <h1 class="text-center font-bold text-2xl sm:text-3xl">5 days forecast</h1>
+        <div id="day1" class="flex gap-4 p-5 justify-between w-full  sm:flex-row flex-col">
+
+        </div>
+    </div>
+    <script src="input.js"></script>
+</body>
+</html>
