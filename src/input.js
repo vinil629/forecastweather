@@ -205,7 +205,7 @@ function displayForecast(data) {
 
     // its used to fetch the current location by using latitude and longitude
 function currentloc(){
-    const name='london';
+    // const name='london';
         console.log("hello")
         geolocation()
         function geolocation(){
